@@ -27,10 +27,15 @@ echo -e "\n updates are done...."
 if [ ! -d /tmp/fsonicauto ]; then
         echo -e "\ncreating temp dir and downloading software files...\n"
         mkdir -p /tmp/fsonicauto;
+       
         # sudo wget -P /tmp/fsonicauto --user=software --password='glastp' ftp://202.59.80.109/23.02_new_file.zip
         sudo wget -P /tmp/fsonicauto https://raw.githubusercontent.com/XtechGlobal-Server/flussonic/main/23.02.zip
-        cd /tmp/fsonicauto; sudo unzip 23.02_new_file.zip
-        cd /tmp/fsonicauto/23.02_new_file
+        
+        # cd /tmp/fsonicauto; sudo unzip 23.02_new_file.zip
+        cd /tmp/fsonicauto; sudo unzip 23.02.zip
+
+        #cd /tmp/fsonicauto/23.02_new_file
+        cd /tmp/fsonicauto/23.02
         echo -e "\n checking software installtion status ..\n"
         sudo dpkg -l | grep ^ii | grep flussonic > /dev/null
         ret=`echo $?`
@@ -73,7 +78,7 @@ if [ ! -d /tmp/fsonicauto ]; then
         fi
 else
         echo -e "\nI did not create temp folder\n"
-        if [ -f /tmp/fsonicauto/23.02_new_file.zip ]; then
+        if [ -f /tmp/fsonicauto/23.02.zip ]; then
                 echo -e "\nsoftware file exist. Please run following command.
                 sudo rm -r /tmp/fsonicauto
                 and execute sudo ./$me
