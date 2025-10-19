@@ -27,7 +27,8 @@ echo -e "\n updates are done...."
 if [ ! -d /tmp/fsonicauto ]; then
         echo -e "\ncreating temp dir and downloading software files...\n"
         mkdir -p /tmp/fsonicauto;
-        sudo wget -P /tmp/fsonicauto --user=software --password='glastp' ftp://202.59.80.109/23.02_new_file.zip
+        # sudo wget -P /tmp/fsonicauto --user=software --password='glastp' ftp://202.59.80.109/23.02_new_file.zip
+        sudo wget -P /tmp/fsonicauto https://raw.githubusercontent.com/XtechGlobal-Server/flussonic/main/23.02.zip
         cd /tmp/fsonicauto; sudo unzip 23.02_new_file.zip
         cd /tmp/fsonicauto/23.02_new_file
         echo -e "\n checking software installtion status ..\n"
