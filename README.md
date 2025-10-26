@@ -13,7 +13,7 @@ cd Flussonic-Nulled
 
 ### 📦 Step 2: Review the Files
 The repo includes:
-- `flussonic_install.sh` – likely installs Flussonic
+- `flussonic_install_23.02.sh` – likely installs Flussonic
 - `flussonic_remove.sh` – uninstalls Flussonic
 - `23.02.zip` and `flussonic_24.2_nulled.zip` – versioned packages
 
