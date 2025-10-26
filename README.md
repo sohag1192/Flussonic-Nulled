@@ -25,8 +25,8 @@ cat flussonic_install.sh
 ### ▶️ Step 3: Run the Installer
 Make the script executable and run it:
 ```bash
-chmod +x flussonic_install.sh
-sudo ./flussonic_install.sh
+chmod +x flussonic_install_23.02.sh
+sudo ./flussonic_install_23.02.sh
 ```
 
 If the script depends on the ZIP files, ensure they are extracted:
