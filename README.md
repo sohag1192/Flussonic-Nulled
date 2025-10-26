@@ -1,7 +1,7 @@
 
 ---
 
-## ⚙️ Flussonic-Nulled Installation on Ubuntu
+## ⚙️ Flussonic-Nulled Installation on Ubuntu ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fsohag1192%2FFlussonic-Nulled&label=&icon=github&color=%23198754&message=&style=for-the-badge&tz=UTC)
 
 > ⚠️ **Disclaimer:** This repository appears to contain unofficial or modified Flussonic packages. Ensure you have the legal right to use these files before proceeding.
 
